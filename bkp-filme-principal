@@ -1,0 +1,13 @@
+<div class="container">
+
+                <h3 class="titulo">Ponto Cego</h3>
+
+                <p class="descricao">Misteriosa mulher é encontrada na Times Square, sem quaisquer lembranças de quem ela é e de como chegou ali. As únicas pistas que ela possui são as tatuagens que cobrem todo o seu corpo. Um agente do FBI passa a ajudá-la enquanto buscam a verdade.</p>
+
+                <div class="btns">
+    
+                    <button role="button" class="btn"><i class="fas fa-play"></i> Assistir Agora</button>
+                    <a href="/pages/filme-detalhes.html"><button role="button" class="btn"><i class="fas fa-plus"></i> Mais informações</button></a>
+    
+                </div>
+            </div>

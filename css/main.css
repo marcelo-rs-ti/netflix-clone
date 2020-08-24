@@ -1,0 +1,369 @@
+:root {
+
+    --vermelho: #e50914;
+    --preto: #141414;
+    --branca: #ffffff;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box ;
+    text-decoration: none;
+}
+
+
+/*base*/
+
+body {
+    background-color: var(--preto);
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--branca);
+}
+
+.header-page {
+    height: 70px;
+    background: linear-gradient(to bottom, #ff131350, transparent);
+    display: flex;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    transition: .8s ease all;
+}
+
+.fixed {
+    background: linear-gradient(180deg, rgba(74,5,5,1) 0%, rgba(20,20,20,1) 90%);
+}
+
+header .container {
+    width: 100%;
+    padding: 1rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-group {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.header-group nav {
+    margin-left: 1rem;
+}
+
+header .logo {
+    color: var(--vermelho);
+    /*font-family: 'Arial Black', Times;*/
+    
+    font-family: Netflix;
+    font-size: 40px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #aaa;
+    margin-right: 10px;
+}
+
+
+header nav a:hover {
+    text-decoration: none;
+    color: #fff;
+}
+
+header .nevegacao-secundaria {
+    display: flex;
+    font-size: 20px;
+}
+
+header .nevegacao-secundaria .icon {
+    margin-right: 10px;
+}
+
+/*Filme principal*/
+
+.filme-principal {
+    height: 100vh;
+}
+
+.filme-principal .descricao {
+    margin-bottom: 40px;
+    margin-top: 10px;
+}
+
+.filme-principal.home > .container,
+.filme-principal.home > .container > .main-banner,
+.filme-principal.home > .container > .main-banner > .banner-item{
+    height: 100%;
+}
+
+.filme-principal .titulo {
+    font-size: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.banner-item {
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('/img/ponto-cego.jpg');
+    height: 10;
+    max-height: 100%;
+    background-size: cover;
+    margin-bottom: 10px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+
+.main-box {
+    display: flex;
+    flex: 1;
+    /* max-height: 100%; */
+}
+
+.text-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center
+}
+
+.galeria-coluna {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.galeria-coluna .galeria-box {
+    width: 200px;
+    height: 68vh;
+    overflow: hidden;
+}
+
+
+.galeria-coluna .galeria-box .galeria-item {
+    border: 2px solid;
+    margin-bottom: 10px;
+    height: 120px;
+    background-size: cover;
+    background-position: center center;
+}
+
+
+
+
+.btn {
+    border: none;
+    color: #c4c4c4;
+    border: 1px solid transparent;
+
+    padding: 5px 10px;
+    margin-right: 15px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: .5s ease all;
+}
+
+.btn:hover {
+    border: 1px solid white;
+    background-color: #c9c9c9;
+    color: #0303039d;
+}
+
+.btn i {
+    margin-right: 5px;
+}
+
+.filmes-lista h3 {
+    margin-left: 30px;
+    margin-bottom: 10px;
+}
+
+/*owl carousel*/
+
+.box-filme {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+
+/*detalhes*/
+
+.filme-principal.detalhes {
+    background: linear-gradient(to left, rgba(0,0,0,.6),rgba(0,0,0,.98)100%), url('/img/ponto-cego.jpg');
+    background-size: cover;
+    height: max-content;
+    padding: 30px 0;
+    margin-bottom: 1rem;
+}
+
+.filme-principal.detalhes h3 {
+    font-size: 30px;
+}
+
+.detalhes h3, .detalhes h4, .detalhes p {
+    margin-bottom: 30px;
+}
+
+
+.filme-principal.detalhes .container p {
+    width: 60%;
+}
+
+
+.acoes {
+    margin-bottom: 30px;
+    display: flex;
+}
+
+
+.info {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.info dl {
+    display: flex;
+}
+
+.info dl dt {
+    width: 120px;
+    font-weight: bold;
+}
+
+.flex-row-between-end {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.share-box {
+    margin-right: 30px;
+}
+
+
+.button-box {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.btn i.fas {
+    margin-right: 10px;
+    font-size: 3rem;
+    color: var(--vermelho)
+}
+
+
+span.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.btn-transparent {
+    background-color: transparent;
+    border: 0;
+    color: #aaaaaa;
+    margin-left: 2rem;
+    font-size: 20px;
+}
+
+.btn-transparent:hover {
+    color: #ffffff;
+}
+
+.detail-box {
+    padding: 30px;
+}
+
+.detail-box .btn i.fas {
+    font-size: 1rem;
+}
+
+.filmes-lista header {
+    margin-bottom: 1rem;
+}
+
+.filmes-lista header h4 {
+    margin-left: 1rem;
+}
+
+
+/* player */
+
+.player {
+    width: 974px;
+    height: 548px;
+}
+
+/* footer page */
+.footer-page {
+    color: grey;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-box {
+    width: 900px;
+    padding: 30px 0;
+}
+
+.redes-sociais {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.redes-sociais>i:hover {
+    color: white;
+    cursor: pointer;
+}
+
+.footer-links {
+    font-size: 0.8rem;
+}
+
+.footer-links .grid {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+}
+
+.footer-links .grid .link {
+    width: 25%;
+    padding: 0.5rem 0;
+}
+
+.footer-page .copyright-box {
+    font-size: 0.6rem;
+    display: flex;
+    justify-content: center;
+}
+
+
+.player-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 70px;
+}
+
+.player-box h2 {
+    margin-bottom: 1rem;
+}
+

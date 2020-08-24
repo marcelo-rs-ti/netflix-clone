@@ -1,0 +1,105 @@
+
+@media screen and (max-width: 1000px) {
+
+    footer .footer-box {
+        width: 90%;
+        padding: 30px;
+    }
+
+    .footer-links .grid .link {
+        width: 30%;
+    }
+
+    .player {
+        width: calc(974px/4*3);
+        height: calc(548px/4*3);
+    }
+
+}
+
+
+@media screen and (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+    }
+
+    .header-group {
+        display: flex;
+        flex-direction: column;
+    }
+
+    header .nevegacao-secundaria  {
+        display: none;
+    }
+
+    .galeria-coluna {
+        display: none;
+    }
+
+    .btn {
+        /* width: 190px; */
+        margin-bottom: 10px;
+    }
+
+    .filme-principal.detalhes .container p {
+        width: 100%;
+    }
+
+    .acoes {
+        flex-direction: column;
+    }
+
+    .acoes span i {
+        font-size: 1rem;
+    }
+
+    .share-box {
+        display: none;
+    }
+
+    .footer .footer-box {
+        width: 95%;
+    }
+
+    .footer-links .grid .link {
+        width: 50%;
+    }
+
+    .player {
+        width: 95vw;
+        height: calc(95vw*0.562);
+    }
+}
+
+@media screen and (max-width: 450px) {
+
+    .button-box {
+        flex-direction: column;
+    }
+
+    .button-box a i.fas {
+        font-size: 1.5rem;
+    }
+
+    .footer .footer-box {
+        width: 100%;
+        padding: 0 5%;
+        flex-direction: column;
+    }
+
+    .footer-links .grid .link {
+        text-align: center;
+    }
+
+    .info {
+        font-size: 0.8rem;
+    }
+
+}
+
+
+@media screen and (min-width: 900px) {
+    .descricao {
+        width: 70%;
+    }
+}
